@@ -15,8 +15,8 @@ function AboutUs() {
     cssEase: "linear"
   };
   return (
-    <div >
-      <section className="bg-[image:var(--image-url)] bg-no-repeat bg-cover w-[100.5%] pb-[500px] mt-14 mb-20 pt-[10rem] " style={{ '--image-url': `url(${backgroundImg})` }}>
+    <div id='about-us' >
+      <section className="bg-[image:var(--image-url)] bg-no-repeat bg-cover w-full pb-[500px] mt-14 mb-20 pt-[10rem] " style={{ '--image-url': `url(${backgroundImg})` }}>
         <div>
           <h2 className="font-mullish text-center text-2xl leading-[1.2] font-extrabold text-white hidden md:block">About Us</h2>
           <div className="w-6 h-1 bg-greenLight mx-auto mt-4 mb-6"></div>

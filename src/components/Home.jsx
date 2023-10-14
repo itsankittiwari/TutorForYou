@@ -2,14 +2,13 @@ import React from 'react'
 import HeroBanner from "../assets/images/hero-illustration.png"
 import Shape from "../assets/images/hero-shape.svg"
 import dotteddesign from "../assets/images/feature-section1-dottedrows.png"
-import { Link } from 'react-router-dom'
 
 function Home() {
     return (
         <div>
-            <Link to='teacher'>
+       
                 <section className="bg-deepBlue relative">
-                    <div className="w-10/12 max-w-[1080px] flex sm:flex-col lg:flex-row justify-between items-center mx-auto ">
+                    <div className="w-10/12 max-w-[1080px] flex sm:flex-col lg:flex-row justify-between items-center mx-auto " id='teacher'>
                         {/* <!--Left Section--> */}
                         <div className="space-y-8">
                             <h1 className="font-mullish font-bold text-[40px] leading-[1.2] text-white">Power your finance, grow your
@@ -32,9 +31,9 @@ function Home() {
 
                     </div>
                 </section>
-            </Link>
+       
 
-            <Link to='student'>
+            
                 <section className="relative mt-[190px] overflow-hidden">
                     <img src={dotteddesign} alt="" loading="lazy" width="233" height="167"
                         className="absolute -top-[8rem] left-[10rem] inline-block -z-10" />
@@ -42,7 +41,7 @@ function Home() {
                     <img src={dotteddesign} alt="" loading="lazy" width="233" height="167"
                         className="absolute top-[3rem] right-0 inline-block rotate-180" />
 
-                    <div className="relative w-11/12 max-w-[1080px] mx-auto pt-4">
+                    <div className="relative w-11/12 max-w-[1080px] mx-auto pt-4 " id='student'>
                         {/* <!--heading--> */}
                         <h2 className="font-mullish text-center text-2xl leading-[1.2] font-extrabold hidden md:block">Accept Payments
                             with Razorpay Payment Suite</h2>
@@ -77,11 +76,7 @@ function Home() {
 
                         </div>
                     </div>
-
-
                 </section>
-            </Link>
-
         </div>
     )
 }
